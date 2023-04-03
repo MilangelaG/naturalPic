@@ -35,10 +35,10 @@ useEffect(() => {
 
   return (
     <div>
-      <MyContext.Provider value={fotos}>
+      <MyContext.Provider value={{fotos, setFotos}}>
       <NavBar />
       <AppRouter />
-      </MyContext.Provider>
+      </MyContext.Provider> 
     </div>
   );
 };
